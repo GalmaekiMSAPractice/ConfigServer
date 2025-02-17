@@ -9,3 +9,16 @@ spring:
       server:
         git:
           uri: https://github.com/GalmaekiMSAPractice/ConfigStore
+        encrypt:
+          enabled: false
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
